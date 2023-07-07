@@ -20,8 +20,8 @@ npm install node-telegram-bot-api
 ```node
 const TelegramBot = require('node-telegram-bot-api');
 
-// Ваш токен бота Telegram
-const token = 'YOUR_TELEGRAM_BOT_TOKEN';
+// Получаем токен бота из секретной переменной
+const token = process.env.TELEGRAM_BOT_TOKEN;
 
 // Создаем экземпляр бота
 const bot = new TelegramBot(token, {polling: true});
